@@ -116,6 +116,20 @@ const FamilySection = () => {
               }}
             >
               <p>शुभम, हिमांशु, मयंक</p>
+                <h4
+                className="font-hindi"
+                style={{
+                  color: '#FFEAA7',
+                  fontSize: '1.15rem',
+                  fontWeight: '700',
+                  marginBottom: '10px',
+                  background: 'rgba(212, 175, 55, 0.12)',
+                  padding: '4px 12px',
+                  borderRadius: '6px',
+                }}
+              >
+                भतीजे:
+              </h4>
               <p>अमन, नमन, ध्रुव</p>
               <p>मीत आरव, विवान</p>
             </div>
@@ -298,9 +312,9 @@ const FamilySection = () => {
                 }}
               >
                 <li>लालचन्द्र - सौ. बेनी</li>
-                <li>शंकरलाल - सौ. लल्ला</li>
+                <li>शंकरलाल - सौ. ललता </li>
                 <li>भगवानदास - स्व. लक्ष्मी</li>
-                <li>ओंकारप्रसाद - सौ. लला</li>
+                <li>ओंकारप्रसाद - सौ. लता</li>
                 <li>लीलाधर - सौ. शोभा</li>
               </ul>
             </div>
