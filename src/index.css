@@ -1,0 +1,347 @@
+/* ==========================================================================
+   ROYAL INDIAN WEDDING INVITATION - RAHUL & SHILPA
+   Color Palette:
+   - Royal Maroon: #5A1020
+   - Deep Burgundy: #3B0915
+   - Antique Gold: #D4AF37
+   - Champagne Gold: #E8D5A3
+   - Ivory: #FFF8E7
+   - Cream: #F7EBD5
+   ========================================================================== */
+
+:root {
+  --color-maroon: #5A1020;
+  --color-burgundy: #3B0915;
+  --color-burgundy-dark: #24050D;
+  --color-gold: #D4AF37;
+  --color-gold-light: #F3E5AB;
+  --color-gold-champagne: #E8D5A3;
+  --color-gold-dark: #9A7B1C;
+  --color-ivory: #FFF8E7;
+  --color-cream: #F7EBD5;
+  --color-text-dark: #3B0915;
+  --color-text-gold: #E8D5A3;
+  --color-text-muted: #B39282;
+
+  --gold-gradient: linear-gradient(135deg, #BF953F 0%, #FCF6BA 25%, #B38728 50%, #FBF5B7 75%, #AA771C 100%);
+  --gold-gradient-soft: linear-gradient(135deg, #D4AF37 0%, #FFF3C4 50%, #AA771C 100%);
+  --maroon-gradient: linear-gradient(180deg, #5A1020 0%, #3B0915 50%, #24050D 100%);
+  --royal-card-bg: linear-gradient(145deg, rgba(90, 16, 32, 0.85) 0%, rgba(59, 9, 21, 0.95) 100%);
+  --cream-card-bg: linear-gradient(145deg, #FFFDF7 0%, #F8EFE0 100%);
+  
+  --font-hindi: 'Noto Serif Devanagari', serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-subserif: 'Cormorant Garamond', Georgia, serif;
+  --font-script: 'Great Vibes', cursive;
+  --font-decorative: 'Cinzel Decorative', 'Playfair Display', serif;
+
+  --shadow-gold: 0 4px 20px rgba(212, 175, 55, 0.25);
+  --shadow-gold-lg: 0 10px 35px rgba(212, 175, 55, 0.35);
+  --shadow-royal: 0 15px 35px rgba(20, 2, 7, 0.6);
+  --border-gold-ornate: 1px solid rgba(212, 175, 55, 0.45);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--color-burgundy-dark);
+  color: var(--color-ivory);
+  font-family: var(--font-hindi);
+  line-height: 1.6;
+  overflow-x: hidden;
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 10% 30%, rgba(90, 16, 32, 0.4) 0%, transparent 40%),
+    radial-gradient(circle at 90% 70%, rgba(90, 16, 32, 0.4) 0%, transparent 40%),
+    repeating-linear-gradient(45deg, rgba(212, 175, 55, 0.015) 0, rgba(212, 175, 55, 0.015) 2px, transparent 0, transparent 16px);
+  background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-burgundy-dark);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--gold-gradient);
+  border-radius: 5px;
+  border: 2px solid var(--color-burgundy);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FFF3C4;
+}
+
+/* Selection */
+::selection {
+  background: var(--color-gold);
+  color: var(--color-burgundy);
+}
+
+/* Typography Helpers */
+.font-hindi {
+  font-family: var(--font-hindi);
+}
+.font-serif {
+  font-family: var(--font-serif);
+}
+.font-subserif {
+  font-family: var(--font-subserif);
+}
+.font-script {
+  font-family: var(--font-script);
+}
+
+/* Gold Shimmer Text */
+.text-gold-shimmer {
+  background: var(--gold-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+}
+
+.text-gold-solid {
+  color: var(--color-gold);
+}
+
+.text-champagne {
+  color: var(--color-gold-champagne);
+}
+
+.text-ivory {
+  color: var(--color-ivory);
+}
+
+/* Royal Containers */
+.royal-container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Royal Ornate Card */
+.royal-card {
+  background: var(--royal-card-bg);
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  box-shadow: var(--shadow-royal), inset 0 0 30px rgba(212, 175, 55, 0.05);
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(8px);
+}
+
+.royal-card-cream {
+  background: var(--cream-card-bg);
+  border: 2px solid var(--color-gold);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  color: var(--color-burgundy);
+  border-radius: 16px;
+  position: relative;
+}
+
+/* Golden Ornate Corner Accents */
+.ornate-corners::before,
+.ornate-corners::after {
+  content: '';
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  border-color: var(--color-gold);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.ornate-corners::before {
+  top: 10px;
+  left: 10px;
+  border-top: 2px solid var(--color-gold);
+  border-left: 2px solid var(--color-gold);
+}
+
+.ornate-corners::after {
+  bottom: 10px;
+  right: 10px;
+  border-bottom: 2px solid var(--color-gold);
+  border-right: 2px solid var(--color-gold);
+}
+
+/* Royal Rajasthani Arch Pattern */
+.royal-arch {
+  border-top-left-radius: 50% 30px;
+  border-top-right-radius: 50% 30px;
+}
+
+/* Section Header Styles */
+.section-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 18px;
+  border: 1px solid rgba(212, 175, 55, 0.5);
+  background: rgba(90, 16, 32, 0.6);
+  border-radius: 30px;
+  color: var(--color-gold-light);
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+  margin-bottom: 14px;
+}
+
+.section-title {
+  font-family: var(--font-hindi);
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--color-gold-light);
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.section-subtitle {
+  font-size: 1.05rem;
+  color: var(--color-gold-champagne);
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 36px auto;
+  opacity: 0.9;
+}
+
+/* Decorative Divider */
+.royal-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 16px auto 28px;
+  max-width: 380px;
+}
+
+.royal-divider::before,
+.royal-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
+}
+
+.divider-icon {
+  color: var(--color-gold);
+  font-size: 1.1rem;
+  filter: drop-shadow(0 0 6px rgba(212, 175, 55, 0.6));
+}
+
+/* Buttons */
+.btn-royal-gold {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: var(--gold-gradient);
+  color: var(--color-burgundy-dark);
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  padding: 14px 32px;
+  border-radius: 40px;
+  border: 1px solid #FFE494;
+  box-shadow: 0 4px 20px rgba(212, 175, 55, 0.4), inset 0 1px 2px rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-royal-gold:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(212, 175, 55, 0.6);
+  filter: brightness(1.08);
+}
+
+.btn-royal-gold:active {
+  transform: translateY(0);
+}
+
+.btn-royal-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: rgba(90, 16, 32, 0.4);
+  color: var(--color-gold-light);
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 12px 26px;
+  border-radius: 40px;
+  border: 1px solid var(--color-gold);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  backdrop-filter: blur(4px);
+}
+
+.btn-royal-outline:hover {
+  background: rgba(212, 175, 55, 0.15);
+  border-color: #FFF3C4;
+  color: #FFF8E7;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.3);
+}
+
+/* Keyframes */
+@keyframes spinSlow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes floatGentle {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.4)); }
+  50% { filter: drop-shadow(0 0 25px rgba(212, 175, 55, 0.8)); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+.animate-spin-slow {
+  animation: spinSlow 35s linear infinite;
+}
+
+.animate-float {
+  animation: floatGentle 4s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.75rem;
+  }
+  .section-subtitle {
+    font-size: 0.95rem;
+    padding: 0 10px;
+  }
+}

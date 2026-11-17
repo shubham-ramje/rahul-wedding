@@ -1,0 +1,205 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <!-- Royal Gold Gradients -->
+    <linearGradient id="goldGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFEAA7" />
+      <stop offset="30%" stop-color="#D4AF37" />
+      <stop offset="70%" stop-color="#AA771C" />
+      <stop offset="100%" stop-color="#FFDF73" />
+    </linearGradient>
+
+    <linearGradient id="goldGrad2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFF3C4" />
+      <stop offset="50%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#805A0C" />
+    </linearGradient>
+
+    <radialGradient id="auraGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFE082" stop-opacity="0.85" />
+      <stop offset="40%" stop-color="#D4AF37" stop-opacity="0.45" />
+      <stop offset="75%" stop-color="#5A1020" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#3B0915" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="centerMandala" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#5A1020" />
+      <stop offset="85%" stop-color="#3B0915" />
+      <stop offset="100%" stop-color="#24050D" />
+    </radialGradient>
+
+    <filter id="royalGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="shadowFilter" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Circular Backdrop with Golden Aura -->
+  <circle cx="300" cy="300" r="285" fill="url(#centerMandala)" stroke="url(#goldGrad1)" stroke-width="4"/>
+  <circle cx="300" cy="300" r="275" fill="url(#auraGlow)"/>
+  
+  <!-- Outer Decorative Ring with Dots & Petals -->
+  <circle cx="300" cy="300" r="268" fill="none" stroke="url(#goldGrad1)" stroke-width="1.5" stroke-dasharray="4,6"/>
+  <circle cx="300" cy="300" r="258" fill="none" stroke="url(#goldGrad2)" stroke-width="2"/>
+
+  <!-- Ornate Golden Mandala Rays behind Ganesha -->
+  <g stroke="url(#goldGrad1)" stroke-width="1.5" opacity="0.65" fill="none">
+    <circle cx="300" cy="300" r="230"/>
+    <circle cx="300" cy="300" r="190" stroke-dasharray="3,5"/>
+    <circle cx="300" cy="300" r="150"/>
+    
+    <!-- 16 Sun Ray Petals -->
+    <g transform="translate(300,300)">
+      <path d="M 0,-255 C 15,-220 25,-180 0,-150 C -25,-180 -15,-220 0,-255 Z" fill="rgba(212,175,55,0.12)"/>
+      <path d="M 0,-255 C 15,-220 25,-180 0,-150 C -25,-180 -15,-220 0,-255 Z" fill="rgba(212,175,55,0.12)" transform="rotate(22.5)"/>
+      <path d="M 0,-255 C 15,-220 25,-180 0,-150 C -25,-180 -15,-220 0,-255 Z" fill="rgba(212,175,55,0.12)" transform="rotate(45)"/>
+      <path d="M 0,-255 C 15,-220 25,-180 0,-150 C -25,-180 -15,-220 0,-255 Z" fill="rgba(212,175,55,0.12)" transform="rotate(67.5)"/>
+      <path d="M 0,-255 C 15,-220 25,-180 0,-150 C -25,-180 -15,-220 0,-255 Z" fill="rgba(212,175,55,0.12)" transform="rotate(90)"/>
+      <path d="M 0,-255 C 15,-220 25,-180 0,-150 C -25,-180 -15,-220 0,-255 Z" fill="rgba(212,175,55,0.12)" transform="rotate(112.5)"/>
+      <path d="M 0,-255 C 15,-220 25,-180 0,-150 C -25,-180 -15,-220 0,-255 Z" fill="rgba(212,175,55,0.12)" transform="rotate(135)"/>
+      <path d="M 0,-255 C 15,-220 25,-180 0,-150 C -25,-180 -15,-220 0,-255 Z" fill="rgba(212,175,55,0.12)" transform="rotate(157.5)"/>
+      <path d="M 0,-255 C 15,-220 25,-180 0,-150 C -25,-180 -15,-220 0,-255 Z" fill="rgba(212,175,55,0.12)" transform="rotate(180)"/>
+      <path d="M 0,-255 C 15,-220 25,-180 0,-150 C -25,-180 -15,-220 0,-255 Z" fill="rgba(212,175,55,0.12)" transform="rotate(202.5)"/>
+      <path d="M 0,-255 C 15,-220 25,-180 0,-150 C -25,-180 -15,-220 0,-255 Z" fill="rgba(212,175,55,0.12)" transform="rotate(225)"/>
+      <path d="M 0,-255 C 15,-220 25,-180 0,-150 C -25,-180 -15,-220 0,-255 Z" fill="rgba(212,175,55,0.12)" transform="rotate(247.5)"/>
+      <path d="M 0,-255 C 15,-220 25,-180 0,-150 C -25,-180 -15,-220 0,-255 Z" fill="rgba(212,175,55,0.12)" transform="rotate(270)"/>
+      <path d="M 0,-255 C 15,-220 25,-180 0,-150 C -25,-180 -15,-220 0,-255 Z" fill="rgba(212,175,55,0.12)" transform="rotate(292.5)"/>
+      <path d="M 0,-255 C 15,-220 25,-180 0,-150 C -25,-180 -15,-220 0,-255 Z" fill="rgba(212,175,55,0.12)" transform="rotate(315)"/>
+      <path d="M 0,-255 C 15,-220 25,-180 0,-150 C -25,-180 -15,-220 0,-255 Z" fill="rgba(212,175,55,0.12)" transform="rotate(337.5)"/>
+    </g>
+  </g>
+
+  <!-- Lord Ganesha Form in Regal Gold -->
+  <g filter="url(#shadowFilter)">
+    <!-- Aura Halo Behind Head -->
+    <circle cx="300" cy="270" r="130" fill="none" stroke="url(#goldGrad1)" stroke-width="3" opacity="0.8"/>
+    <circle cx="300" cy="270" r="120" fill="none" stroke="url(#goldGrad2)" stroke-width="1.5" stroke-dasharray="6,4"/>
+
+    <!-- Royal Crown (Mukut) -->
+    <path d="M 240,195 L 260,110 L 285,155 L 300,75 L 315,155 L 340,110 L 360,195 Z" 
+          fill="url(#goldGrad1)" stroke="#805A0C" stroke-width="2"/>
+    
+    <!-- Crown Ornaments -->
+    <path d="M 255,185 C 285,195 315,195 345,185 L 348,198 C 315,208 285,208 252,198 Z" 
+          fill="url(#goldGrad2)" stroke="#5A1020" stroke-width="1"/>
+    
+    <!-- Crown Jewels (Ruby & Emerald accents) -->
+    <circle cx="300" cy="115" r="7" fill="#C2185B" stroke="url(#goldGrad1)" stroke-width="1.5"/>
+    <circle cx="280" cy="155" r="5" fill="#1B5E20" stroke="url(#goldGrad1)" stroke-width="1"/>
+    <circle cx="320" cy="155" r="5" fill="#1B5E20" stroke="url(#goldGrad1)" stroke-width="1"/>
+    <circle cx="300" cy="165" r="6" fill="#C2185B" stroke="url(#goldGrad1)" stroke-width="1.5"/>
+
+    <!-- Large Royal Ears (Supakarana) -->
+    <!-- Left Ear -->
+    <path d="M 230,225 C 150,220 140,290 180,350 C 205,385 235,360 235,320 C 235,280 220,245 230,225 Z" 
+          fill="url(#goldGrad2)" stroke="#AA771C" stroke-width="2"/>
+    <path d="M 215,250 C 170,250 165,300 195,335" 
+          fill="none" stroke="url(#goldGrad1)" stroke-width="2.5" stroke-linecap="round"/>
+    
+    <!-- Right Ear -->
+    <path d="M 370,225 C 450,220 460,290 420,350 C 395,385 365,360 365,320 C 365,280 380,245 370,225 Z" 
+          fill="url(#goldGrad2)" stroke="#AA771C" stroke-width="2"/>
+    <path d="M 385,250 C 430,250 435,300 405,335" 
+          fill="none" stroke="url(#goldGrad1)" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Head and Forehead -->
+    <path d="M 235,225 C 235,200 365,200 365,225 C 365,260 345,280 300,285 C 255,280 235,260 235,225 Z" 
+          fill="url(#goldGrad1)" stroke="#805A0C" stroke-width="2"/>
+
+    <!-- Sacred Tilak (Trishul & Chandan Bindi) -->
+    <g transform="translate(300, 235)">
+      <!-- Red Tilak -->
+      <path d="M -16,-20 C -12,-5 -5,12 0,22 C 5,12 12,-5 16,-20 C 10,-12 3,-8 0,-8 C -3,-8 -10,-12 -16,-20 Z" 
+            fill="#D32F2F" stroke="#B71C1C" stroke-width="0.8"/>
+      <!-- Gold/Chandan Center Stripe -->
+      <path d="M -3,-18 L 3,-18 L 1,18 L -1,18 Z" fill="#FFE082"/>
+      <!-- Red Kumkum Dot -->
+      <circle cx="0" cy="5" r="4" fill="#B71C1C"/>
+      <circle cx="0" cy="5" r="2" fill="#FFF9C4"/>
+    </g>
+
+    <!-- Divine Eyes -->
+    <!-- Left Eye -->
+    <path d="M 260,262 C 272,258 285,264 285,264 C 285,264 275,270 262,267 Z" fill="#24050D"/>
+    <circle cx="272" cy="264" r="1.5" fill="#FFF"/>
+
+    <!-- Right Eye -->
+    <path d="M 340,262 C 328,258 315,264 315,264 C 315,264 325,270 338,267 Z" fill="#24050D"/>
+    <circle cx="328" cy="264" r="1.5" fill="#FFF"/>
+
+    <!-- Trunk (Vakratunda) gracefully curving to the left -->
+    <path d="M 285,285 C 290,340 330,370 335,420 C 340,465 285,480 250,465 C 220,450 225,410 255,410 C 275,410 280,430 265,438 C 255,442 245,435 248,425 C 252,415 275,418 285,440 C 300,450 318,445 315,420 C 310,380 270,350 265,305 C 265,290 275,285 285,285 Z" 
+          fill="url(#goldGrad1)" stroke="#805A0C" stroke-width="2.2"/>
+    
+    <!-- Trunk Decorative Gold Rings and Ridges -->
+    <path d="M 270,335 C 285,340 305,335 312,325" fill="none" stroke="#805A0C" stroke-width="1.8"/>
+    <path d="M 280,365 C 295,370 315,365 325,355" fill="none" stroke="#805A0C" stroke-width="1.8"/>
+    <path d="M 292,395 C 305,400 322,395 330,385" fill="none" stroke="#805A0C" stroke-width="1.8"/>
+
+    <!-- Sacred Modak in Trunk Tip / Lotus -->
+    <g transform="translate(255, 410)">
+      <ellipse cx="0" cy="0" rx="9" ry="11" fill="url(#goldGrad2)" stroke="#AA771C" stroke-width="1"/>
+      <path d="M 0,-11 L 0,11" stroke="#AA771C" stroke-width="0.8"/>
+      <circle cx="0" cy="-3" r="2" fill="#D32F2F"/>
+    </g>
+
+    <!-- Tusks (Danta) -->
+    <!-- Right Intact Tusk -->
+    <path d="M 330,290 C 345,300 365,305 375,295 C 362,290 348,285 330,290 Z" fill="#FFFDF7" stroke="#AA771C" stroke-width="1"/>
+    <!-- Left Broken Tusk (Ekadanta symbol of sacrifice) -->
+    <path d="M 270,290 C 260,297 252,298 248,295 C 255,290 262,286 270,290 Z" fill="#FFFDF7" stroke="#AA771C" stroke-width="1"/>
+
+    <!-- Right Hand in Abhaya Mudra (Blessing Pose with Om) -->
+    <g transform="translate(415, 370)">
+      <path d="M -20,20 C -25,-10 -5,-35 20,-30 C 35,-25 40,-5 35,25 C 25,50 -5,50 -20,20 Z" 
+            fill="url(#goldGrad1)" stroke="#805A0C" stroke-width="2"/>
+      <!-- Fingers detail -->
+      <path d="M -5,-30 L -5,-5 M 5,-32 L 5,-3 M 15,-28 L 15,-2 M 25,-20 L 22,0" 
+            fill="none" stroke="#805A0C" stroke-width="1.2" stroke-linecap="round"/>
+      <!-- Sacred ॐ in Palm -->
+      <text x="8" y="16" font-family="'Noto Serif Devanagari', serif" font-size="20" font-weight="bold" fill="#B71C1C" text-anchor="middle">ॐ</text>
+    </g>
+
+    <!-- Left Hand with Bowl of Modaks (Laddus) -->
+    <g transform="translate(185, 375)">
+      <!-- Bowl / Patra -->
+      <path d="M -25,5 C -25,35 25,35 25,5 Z" fill="url(#goldGrad2)" stroke="#805A0C" stroke-width="2"/>
+      <!-- Modaks in Bowl -->
+      <circle cx="-10" cy="0" r="8" fill="#FFB300" stroke="#FF8F00" stroke-width="1"/>
+      <circle cx="8" cy="0" r="8" fill="#FFB300" stroke="#FF8F00" stroke-width="1"/>
+      <circle cx="-1" cy="-8" r="9" fill="#FFCA28" stroke="#FFA000" stroke-width="1"/>
+      <circle cx="-1" cy="-8" r="3" fill="#D32F2F"/>
+    </g>
+
+    <!-- Upper Hands Holding Parashu (Axe) and Lotus -->
+    <!-- Upper Right Axe -->
+    <g transform="translate(425, 230)">
+      <path d="M -15,40 L 25,-40" stroke="url(#goldGrad2)" stroke-width="4" stroke-linecap="round"/>
+      <path d="M 15,-30 C 35,-50 45,-20 20,-10 Z" fill="url(#goldGrad1)" stroke="#805A0C" stroke-width="1.5"/>
+    </g>
+
+    <!-- Upper Left Lotus / Ankusha -->
+    <g transform="translate(175, 230)">
+      <path d="M 15,40 L -25,-40" stroke="url(#goldGrad2)" stroke-width="4" stroke-linecap="round"/>
+      <!-- Lotus Petals -->
+      <path d="M -25,-40 C -45,-55 -30,-65 -25,-45 C -20,-65 -5,-55 -25,-40 Z" fill="#F06292" stroke="url(#goldGrad1)" stroke-width="1.5"/>
+    </g>
+
+    <!-- Royal Floral Garland (Mala) around Neck -->
+    <path d="M 230,340 C 270,440 330,440 370,340" fill="none" stroke="url(#goldGrad1)" stroke-width="8" stroke-dasharray="8,4" stroke-linecap="round"/>
+    <circle cx="300" cy="425" r="9" fill="#C2185B" stroke="url(#goldGrad1)" stroke-width="2"/>
+    <circle cx="280" cy="415" r="7" fill="#F57C00"/>
+    <circle cx="320" cy="415" r="7" fill="#F57C00"/>
+  </g>
+
+  <!-- Sacred Shloka Ribbon Arc at Bottom -->
+  <g transform="translate(300, 530)">
+    <path d="M -230,0 Q 0,40 230,0" fill="none" stroke="url(#goldGrad1)" stroke-width="2"/>
+    <circle cx="0" cy="18" r="4" fill="url(#goldGrad1)"/>
+    <circle cx="-120" cy="9" r="3" fill="url(#goldGrad1)"/>
+    <circle cx="120" cy="9" r="3" fill="url(#goldGrad1)"/>
+  </g>
+</svg>

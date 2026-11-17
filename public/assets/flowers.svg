@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="marigoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD54F" />
+      <stop offset="40%" stop-color="#FF9800" />
+      <stop offset="100%" stop-color="#E65100" />
+    </linearGradient>
+    <linearGradient id="roseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF80AB" />
+      <stop offset="50%" stop-color="#E91E63" />
+      <stop offset="100%" stop-color="#880E4F" />
+    </linearGradient>
+    <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C8E6C9" />
+      <stop offset="40%" stop-color="#4CAF50" />
+      <stop offset="100%" stop-color="#1B5E20" />
+    </linearGradient>
+    <linearGradient id="goldToran" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE082" />
+      <stop offset="50%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#996515" />
+    </linearGradient>
+
+    <!-- Single Marigold Flower -->
+    <g id="marigoldFlower">
+      <circle cx="0" cy="0" r="18" fill="url(#marigoldGrad)"/>
+      <!-- Concentric ruffled petals -->
+      <circle cx="0" cy="0" r="14" fill="#FFA726" stroke="#E65100" stroke-width="1" stroke-dasharray="3,2"/>
+      <circle cx="0" cy="0" r="10" fill="#FFB74D" stroke="#E65100" stroke-width="0.8" stroke-dasharray="2,2"/>
+      <circle cx="0" cy="0" r="5" fill="#FFE082"/>
+      <circle cx="0" cy="0" r="2" fill="#E65100"/>
+    </g>
+
+    <!-- Mango Leaf / Ashoka Leaf -->
+    <g id="mangoLeaf">
+      <path d="M 0,0 C 15,10 25,35 0,70 C -25,35 -15,10 0,0 Z" fill="url(#leafGrad)" stroke="#1B5E20" stroke-width="0.8"/>
+      <path d="M 0,0 L 0,65" stroke="#81C784" stroke-width="0.8"/>
+    </g>
+
+    <!-- Golden Bell / Ghunghroo -->
+    <g id="goldBell">
+      <path d="M -8,0 C -8,12 8,12 8,0 Z" fill="url(#goldToran)"/>
+      <circle cx="0" cy="12" r="3" fill="#D4AF37"/>
+    </g>
+  </defs>
+
+  <!-- Hanging Golden String / Toran Rope -->
+  <path d="M 0,15 Q 100,60 200,15 Q 300,60 400,15 Q 500,60 600,15 Q 700,60 800,15" 
+        fill="none" stroke="url(#goldToran)" stroke-width="3"/>
+  <path d="M 0,22 Q 100,67 200,22 Q 300,67 400,22 Q 500,67 600,22 Q 700,67 800,22" 
+        fill="none" stroke="url(#goldToran)" stroke-width="1.2" stroke-dasharray="4,4"/>
+
+  <!-- Swags of Marigolds & Leaves -->
+  <!-- Swag 1 (0 to 200) -->
+  <use href="#mangoLeaf" transform="translate(40, 28) rotate(15) scale(0.6)"/>
+  <use href="#mangoLeaf" transform="translate(100, 42) scale(0.7)"/>
+  <use href="#mangoLeaf" transform="translate(160, 28) rotate(-15) scale(0.6)"/>
+
+  <use href="#marigoldFlower" transform="translate(30, 25) scale(0.85)"/>
+  <use href="#marigoldFlower" transform="translate(65, 36) scale(0.9)"/>
+  <use href="#marigoldFlower" transform="translate(100, 48) scale(1.1)"/>
+  <use href="#marigoldFlower" transform="translate(135, 36) scale(0.9)"/>
+  <use href="#marigoldFlower" transform="translate(170, 25) scale(0.85)"/>
+
+  <use href="#goldBell" transform="translate(100, 68) scale(0.9)"/>
+
+  <!-- Swag 2 (200 to 400) -->
+  <use href="#mangoLeaf" transform="translate(240, 28) rotate(15) scale(0.6)"/>
+  <use href="#mangoLeaf" transform="translate(300, 42) scale(0.7)"/>
+  <use href="#mangoLeaf" transform="translate(360, 28) rotate(-15) scale(0.6)"/>
+
+  <use href="#marigoldFlower" transform="translate(230, 25) scale(0.85)"/>
+  <use href="#marigoldFlower" transform="translate(265, 36) scale(0.9)"/>
+  <use href="#marigoldFlower" transform="translate(300, 48) scale(1.1)"/>
+  <use href="#marigoldFlower" transform="translate(335, 36) scale(0.9)"/>
+  <use href="#marigoldFlower" transform="translate(370, 25) scale(0.85)"/>
+
+  <use href="#goldBell" transform="translate(300, 68) scale(0.9)"/>
+
+  <!-- Swag 3 (400 to 600) -->
+  <use href="#mangoLeaf" transform="translate(440, 28) rotate(15) scale(0.6)"/>
+  <use href="#mangoLeaf" transform="translate(500, 42) scale(0.7)"/>
+  <use href="#mangoLeaf" transform="translate(560, 28) rotate(-15) scale(0.6)"/>
+
+  <use href="#marigoldFlower" transform="translate(430, 25) scale(0.85)"/>
+  <use href="#marigoldFlower" transform="translate(465, 36) scale(0.9)"/>
+  <use href="#marigoldFlower" transform="translate(500, 48) scale(1.1)"/>
+  <use href="#marigoldFlower" transform="translate(535, 36) scale(0.9)"/>
+  <use href="#marigoldFlower" transform="translate(570, 25) scale(0.85)"/>
+
+  <use href="#goldBell" transform="translate(500, 68) scale(0.9)"/>
+
+  <!-- Swag 4 (600 to 800) -->
+  <use href="#mangoLeaf" transform="translate(640, 28) rotate(15) scale(0.6)"/>
+  <use href="#mangoLeaf" transform="translate(700, 42) scale(0.7)"/>
+  <use href="#mangoLeaf" transform="translate(760, 28) rotate(-15) scale(0.6)"/>
+
+  <use href="#marigoldFlower" transform="translate(630, 25) scale(0.85)"/>
+  <use href="#marigoldFlower" transform="translate(665, 36) scale(0.9)"/>
+  <use href="#marigoldFlower" transform="translate(700, 48) scale(1.1)"/>
+  <use href="#marigoldFlower" transform="translate(735, 36) scale(0.9)"/>
+  <use href="#marigoldFlower" transform="translate(770, 25) scale(0.85)"/>
+
+  <use href="#goldBell" transform="translate(700, 68) scale(0.9)"/>
+
+  <!-- Golden Rosettes at Junctions -->
+  <circle cx="0" cy="15" r="14" fill="url(#goldToran)" stroke="#805A0C" stroke-width="1.5"/>
+  <circle cx="200" cy="15" r="14" fill="url(#goldToran)" stroke="#805A0C" stroke-width="1.5"/>
+  <circle cx="400" cy="15" r="14" fill="url(#goldToran)" stroke="#805A0C" stroke-width="1.5"/>
+  <circle cx="600" cy="15" r="14" fill="url(#goldToran)" stroke="#805A0C" stroke-width="1.5"/>
+  <circle cx="800" cy="15" r="14" fill="url(#goldToran)" stroke="#805A0C" stroke-width="1.5"/>
+  
+  <circle cx="200" cy="15" r="6" fill="#C2185B"/>
+  <circle cx="400" cy="15" r="6" fill="#C2185B"/>
+  <circle cx="600" cy="15" r="6" fill="#C2185B"/>
+</svg>
